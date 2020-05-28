@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-spam-be-gone",
-  "version": "0.6.7",
+  "version": "0.6.8",
   "description": "anti spam using both Google Recaptcha, Akismet.com, StopForumSpam.com & ProjectHoneyPot.com",
   "main": "index.js",
   "scripts": {
@@ -30,16 +30,16 @@
     "url": "https://github.com/akhoury/nodebb-plugin-spam-be-gone"
   },
   "husky": {
-      "hooks": {
-          "pre-commit": "lint-staged",
-          "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-      }
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "lint-staged": {
-      "*.js": [
-          "eslint --fix",
-          "git add"
-      ]
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "dependencies": {
     "akismet": "^1.0.0",
